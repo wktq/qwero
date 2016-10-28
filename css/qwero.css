@@ -32,7 +32,6 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
 .col,
 .cols {
   width: 100%;
@@ -352,7 +351,6 @@ padding: 1rem 2rem .8rem 2rem;
   margin-top: 4px;
 }
 
-
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Forms & Inputs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -561,7 +559,6 @@ form {
         left: 50%;
         right: 0;
     }
-
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -593,42 +590,89 @@ div.spacer-3 { width: 100%; height: 3em;}
 div.spacer-2 { width: 100%; height: 2em;}
 div.spacer-1 { width: 100%; height: 1em;}
 
-.mg-0 { margin: 0;}
-.mg-1 { margin: .5rem;}
-.mg-2 { margin: 1.0rem;}
-.mg-3 { margin: 1.5rem;}
-.mg-4 { margin: 2.0rem;}
-.mg-5 { margin: 2.5rem;}
+.sm-mg-0 { margin: 0;}
+.sm-mg-1 { margin: .5rem;}
+.sm-mg-2 { margin: 1.0rem;}
+.sm-mg-3 { margin: 1.5rem;}
+.sm-mg-4 { margin: 2.0rem;}
 
-.mg-top-0 { margin-top: 0;}
-.mg-top-1 { margin-top: .5rem;}
-.mg-top-2 { margin-top: 1.0rem;}
-.mg-top-3 { margin-top: 1.5rem;}
-.mg-top-4 { margin-top: 2.0rem;}
-.mg-top-5 { margin-top: 2.5rem;}
+.sm-mg-top-0 { margin-top: 0;}
+.sm-mg-top-1 { margin-top: .5rem;}
+.sm-mg-top-2 { margin-top: 1.0rem;}
+.sm-mg-top-3 { margin-top: 1.5rem;}
+.sm-mg-top-4 { margin-top: 2.0rem;}
 
-.mg-right-0 { margin-right: 0;}
-.mg-right-1 { margin-right: .5rem;}
-.mg-right-2 { margin-right: 1.0rem;}
-.mg-right-3 { margin-right: 1.5rem;}
-.mg-right-4 { margin-right: 2.0rem;}
-.mg-right-5 { margin-right: 2.5rem;}
+.sm-mg-right-0 { margin-right: 0;}
+.sm-mg-right-1 { margin-right: .5rem;}
+.sm-mg-right-2 { margin-right: 1.0rem;}
+.sm-mg-right-3 { margin-right: 1.5rem;}
+.sm-mg-right-4 { margin-right: 2.0rem;}
 
-.mg-bottom-0 { margin-bottom: 0;}
-.mg-bottom-1 { margin-bottom: .5rem;}
-.mg-bottom-2 { margin-bottom: 1.0rem;}
-.mg-bottom-3 { margin-bottom: 1.5rem;}
-.mg-bottom-4 { margin-bottom: 2.0rem;}
-.mg-bottom-5 { margin-bottom: 2.5rem;}
+.sm-mg-bottom-0 { margin-bottom: 0;}
+.sm-mg-bottom-1 { margin-bottom: .5rem;}
+.sm-mg-bottom-2 { margin-bottom: 1.0rem;}
+.sm-mg-bottom-3 { margin-bottom: 1.5rem;}
+.sm-mg-bottom-4 { margin-bottom: 2.0rem;}
 
-.mg-left-0 { margin-left: 0;}
-.mg-left-1 { margin-left: .5rem;}
-.mg-left-2 { margin-left: 1.0rem;}
-.mg-left-3 { margin-left: 1.5rem;}
-.mg-left-4 { margin-left: 2.0rem;}
-.mg-left-5 { margin-left: 2.5rem;}
+.sm-mg-left-0 { margin-left: 0;}
+.sm-mg-left-1 { margin-left: .5rem;}
+.sm-mg-left-2 { margin-left: 1.0rem;}
+.sm-mg-left-3 { margin-left: 1.5rem;}
+.sm-mg-left-4 { margin-left: 2.0rem;}
 
+/* For devices larger than 768px */
+@media (min-width: 768px) {
+  .md-mg-top-0 { margin-top: 0;}
+  .md-mg-top-1 { margin-top: .5rem;}
+  .md-mg-top-2 { margin-top: 1.0rem;}
+  .md-mg-top-3 { margin-top: 1.5rem;}
+  .md-mg-top-4 { margin-top: 2.0rem;}
 
+  .md-mg-right-0 { margin-right: 0;}
+  .md-mg-right-1 { margin-right: .5rem;}
+  .md-mg-right-2 { margin-right: 1.0rem;}
+  .md-mg-right-3 { margin-right: 1.5rem;}
+  .md-mg-right-4 { margin-right: 2.0rem;}
+
+  .md-mg-bottom-0 { margin-bottom: 0;}
+  .md-mg-bottom-1 { margin-bottom: .5rem;}
+  .md-mg-bottom-2 { margin-bottom: 1.0rem;}
+  .md-mg-bottom-3 { margin-bottom: 1.5rem;}
+  .md-mg-bottom-4 { margin-bottom: 2.0rem;}
+
+  .md-mg-left-0 { margin-left: 0;}
+  .md-mg-left-1 { margin-left: .5rem;}
+  .md-mg-left-2 { margin-left: 1.0rem;}
+  .md-mg-left-3 { margin-left: 1.5rem;}
+  .md-mg-left-4 { margin-left: 2.0rem;}
+}
+
+/* For devices larger than 1240px */
+@media (min-width: 1240px) {
+  .lg-mg-top-0 { margin-top: 0;}
+  .lg-mg-top-1 { margin-top: .5rem;}
+  .lg-mg-top-2 { margin-top: 1.0rem;}
+  .lg-mg-top-3 { margin-top: 1.5rem;}
+  .lg-mg-top-4 { margin-top: 2.0rem;}
+
+  .lg-mg-right-0 { margin-right: 0;}
+  .lg-mg-right-1 { margin-right: .5rem;}
+  .lg-mg-right-2 { margin-right: 1.0rem;}
+  .lg-mg-right-3 { margin-right: 1.5rem;}
+  .lg-mg-right-4 { margin-right: 2.0rem;}
+
+  .lg-mg-bottom-0 { margin-bottom: 0;}
+  .lg-mg-bottom-1 { margin-bottom: .5rem;}
+  .lg-mg-bottom-2 { margin-bottom: 1.0rem;}
+  .lg-mg-bottom-3 { margin-bottom: 1.5rem;}
+  .lg-mg-bottom-4 { margin-bottom: 2.0rem;}
+
+  .lg-mg-left-0 { margin-left: 0;}
+  .lg-mg-left-1 { margin-left: .5rem;}
+  .lg-mg-left-2 { margin-left: 1.0rem;}
+  .lg-mg-left-3 { margin-left: 1.5rem;}
+  .lg-mg-left-4 { margin-left: 2.0rem;}
+}
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Aligner
@@ -692,7 +736,6 @@ div.spacer-1 { width: 100%; height: 1em;}
   display: block;
 }
 
-
 /* Larger than Desktop HD */
 @media (min-width: 1440px) {
   .show-xs {display: none}
@@ -751,18 +794,15 @@ div.spacer-1 { width: 100%; height: 1em;}
 
 .card {
   background-color: #fff;
-  border-top: solid 1px rgba(200, 200, 200, 0.4);
-  border-left: solid 1px rgba(200, 200, 200, 0.4);
-  border-bottom: solid 1px rgba(55, 55, 55, 0.2);
-  border-right: solid 1px rgba(55, 55, 55, 0.2);
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin-bottom: 1%;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .panel {
   background-color: #fff;
-  border: solid 1px #ddd;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin-bottom: 1%;
 }
@@ -862,11 +902,9 @@ div.spacer-1 { width: 100%; height: 1em;}
 .card .card-btn:active, .panel .panel-btn:active {
   background-color: #eeeeee;
 }
-
 .card .summary img, .panel .summary img {
   width: 50%;
 }
-
 .card .card-menu, .panel .summary img  {
   padding: 0;
 }
@@ -910,7 +948,6 @@ div.spacer-1 { width: 100%; height: 1em;}
   border-top: 2px #008051 solid;
 }
 
-
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -921,53 +958,37 @@ div.spacer-1 { width: 100%; height: 1em;}
 .qw-float-right { float: right; }
 .qw-float-left { float: left; }
 
-
 .fill-dark {
   background-color: #333333;
   color: #f5f5f5;
 }
-
 .fill-red {
   background-color: rgba(173,30,37,1);
   color: #f5f5f5;
 }
-
 .fill-orange {
   background-color: rgba(235,116,19,1);
   color: #f5f5f5;
 }
-
 .fill-green {
   background-color: rgba(0, 128, 81,1);
   color: #f5f5f5;
 }
-
 .fill-blue {
   background-color: rgba(0, 123, 195,1);
   color: #f5f5f5;
 }
-
 .fill-smoke {
   background-color: #f5f5f5;
   color: #000000;
 }
-
 .tx-dark {
-  color: #333333;
-}
-
+  color: #333333; }
 .tx-red {
-  color: rgba(173,30,37,1);
-}
-
+  color: rgba(173,30,37,1); }
 .tx-orange {
-  color: rgba(235,116,19,1);
-}
-
+  color: rgba(235,116,19,1); }
 .tx-green {
-  color: rgba(0, 128, 81,1);
-}
-
+  color: rgba(0, 128, 81,1); }
 .tx-blue {
-  color: rgba(0, 123, 195,1);
-}
+  color: rgba(0, 123, 195,1); }

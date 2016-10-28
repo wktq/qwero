@@ -18,7 +18,7 @@
           <a class="slip-btn"><i class="icon ion-navicon"></i></a>
         </div>
         <div class="logo-wrap">
-          <h5 class="logo">Qwero</h5>
+          <a href="./"><h5 class="logo">Qwero</h5></a>
         </div>
         <div class="header-right">
           <a href="http://github.com/wktq/qwero"><i class="icon ion-social-github"></i></a>
@@ -27,10 +27,11 @@
     </header>
     <nav class="sliper">
       <ul>
-        <li><i class="icon ion-ios-home"></i>&nbsp;トップ</li>
-        <li><i class="icon ion-person"></i>&nbsp;ユーザー情報変更</li>
-        <li><i class="icon ion-ios-home"></i>&nbsp;ログイン</li>
-        <li><i class="icon ion-ios-home"></i>&nbsp;新規登録</li>
+        <a href="./"><li><i class="icon ion-ios-home"></i>&nbsp;TOP</li></a>
+        <a href="./index.html"><li><i class="icon ion-ios-book"></i>&nbsp;Documentation</li></a>
+        <a href="./index.html"><li><i class="icon ion-ios-albums"></i>&nbsp;Collection</li></a>
+        <a href="./index.html"><li><i class="icon ion-ios-color-wand"></i>&nbsp;Theme</li></a>
+        <a href="./index.html"><li><i class="icon ion-social-github"></i>&nbsp;Github</li></a>
       </ul>
     </nav>
     <main class="container">
@@ -60,7 +61,7 @@
             </div>
           </div>
           <div class="sm-12 md-8 lg-9 cols">
-            <div class="panel mg-left-1">
+            <div class="panel lg-mg-left-2">
               <div class="head">
                 Panel
               </div>
@@ -88,6 +89,17 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script type="text/javascript">
+    var ua = navigator.userAgent.toLowerCase();
+    var isiPhone = (ua.indexOf('iphone') > -1);
+    var isiPad = (ua.indexOf('ipad') > -1);
+    var isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
+    var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
+
+    if(isiPhone || isiPad || isAndroid || isAndroidTablet) {
+      alert('mobile');
+    } else {
+      alert('pc');
+    }
       $(".slip-btn").click(function() {
         $(".sliper").toggleClass("sliper-open");
       });
