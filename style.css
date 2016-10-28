@@ -1,0 +1,21 @@
+.menu-header .logo-wrap .logo {
+  font-family: "Quicksand";
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  line-height: 60px;
+}
+
+.menu-header .header-left .slip-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-header .header-right a {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
