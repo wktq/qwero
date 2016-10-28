@@ -96,13 +96,25 @@
     var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
 
     if(isiPhone || isiPad || isAndroid || isAndroidTablet) {
-      alert('mobile');
+
     } else {
-      alert('pc');
+      toggleSliper();
     }
       $(".slip-btn").click(function() {
-        $(".sliper").toggleClass("sliper-open");
+        toggleSliper();
       });
+
+    function toggleSliper() {
+      $(".sliper").toggleClass("sliper-open");
+      var slipIcon = $(".slip-btn").find(".icon");
+      if (slipIcon.hasClass("ion-navicon")) {
+        slipIcon.removeClass("ion-navicon");
+        slipIcon.addClass("ion-android-close");
+      } else {
+        slipIcon.removeClass("ion-android-close");
+        slipIcon.addClass("ion-navicon");
+      }
+    }
     </script>
   </body>
 </html>
