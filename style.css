@@ -21,11 +21,11 @@
   color: #333;
 }
 
-a {
-  color: #333;
+.pack a {
+  color: #eb7413;
   text-decoration: none;
 }
 
-a:hover{
-  color: #555;
+.pack a:hover{
+  color: #F89D46;
 }

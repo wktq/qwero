@@ -174,7 +174,7 @@
 .two-thirds              { width: 66.66666666666666%!important; }
 .one-half                { width: 50% !important;}
 .full-x                  { width: 100% !important; }
-
+.full-y                  { height: 100% !important; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Base Styles
@@ -225,14 +225,8 @@ ul{
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom:.4rem;
+  margin-bottom:.8rem;
   font-weight: 600; }
-h1 { font-size: 2.4rem; line-height: 1.2;}
-h2 { font-size: 2.0rem; line-height: 1.25;}
-h3 { font-size: 1.6rem; line-height: 1.3;}
-h4 { font-size: 1.4rem; line-height: 1.35;}
-h5 { font-size: 1.2rem; line-height: 1.5;}
-h6 { font-size: 1rem; line-height: 1.6;}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -420,13 +414,13 @@ form {
     margin-bottom: 0;
 }
 
-.qwertize input[type=radio],
-.qwertize input[type=checkbox] {
+input[type=radio],
+input[type=checkbox] {
     display: inline-block;
     margin-right: 6px;
 }
-.qwertize input[type=radio] + label,
-.qwertize input[type=checkbox] + label {
+input[type=radio] + label,
+input[type=checkbox] + label {
     position: relative;
     display: inline-block;
     margin-right: 12px;
@@ -436,17 +430,17 @@ form {
 }
 
 @media (min-width: 1px) {
-    .qwertize input[type=radio],
-    .qwertize input[type=checkbox] {
+    input[type=radio],
+    input[type=checkbox] {
         display: none;
         margin: 0;
     }
-    .qwertize input[type=radio] + label,
-    .qwertize input[type=checkbox] + label {
+    input[type=radio] + label,
+    input[type=checkbox] + label {
         padding: 0 0 0 24px;
     }
-    .qwertize input[type=radio] + label::before,
-    .qwertize input[type=checkbox] + label::before {
+    input[type=radio] + label::before,
+    input[type=checkbox] + label::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -459,15 +453,15 @@ form {
         margin-top: -9px;
         background: #FFF;
     }
-    .qwertize input[type=radio] + label::before {
+    input[type=radio] + label::before {
         border: 2px solid #ccc;
         border-radius: 30px;
     }
-    .qwertize input[type=checkbox] + label::before {
+    input[type=checkbox] + label::before {
         border: 2px solid #ccc;
     }
-    .qwertize input[type=radio]:checked + label::after,
-    .qwertize input[type=checkbox]:checked + label::after {
+    input[type=radio]:checked + label::after,
+    input[type=checkbox]:checked + label::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -475,7 +469,7 @@ form {
         box-sizing: border-box;
         display: block;
     }
-    .qwertize input[type=radio]:checked + label::after {
+    input[type=radio]:checked + label::after {
         left: 5px;
         width: 8px;
         height: 8px;
@@ -483,7 +477,7 @@ form {
         background: #EB7413;
         border-radius: 8px;
     }
-    .qwertize input[type=checkbox]:checked + label::after {
+    input[type=checkbox]:checked + label::after {
         left: 3px;
         width: 16px;
         height: 8px;
@@ -496,7 +490,7 @@ form {
     }
 
     /* switch */
-    .qwertize .switch {
+    .switch {
         position: relative;
         display: block;
         margin: auto;
@@ -505,7 +499,7 @@ form {
         overflow: hidden;
         border: 2px solid #ccc;
     }
-    .qwertize .switch input[type=radio] + label {
+    .switch input[type=radio] + label {
         position: static;
         float: left;
         display: block;
@@ -516,7 +510,7 @@ form {
         text-align: center;
         font-size: 12px;
     }
-    .qwertize .switch input[type=radio] + label::before {
+    .switch input[type=radio] + label::before {
         content: attr(data-label);
         top: 0;
         bottom: 0;
@@ -531,11 +525,11 @@ form {
         border: 0 none;
         border-radius: 0;
     }
-    .qwertize .switch input[type=radio] + label:last-child::before {left: 50%;right: 0;}
-    .qwertize .switch input[type=radio]:checked + label::before {color: #fff;}
-    .qwertize .switch input[type=radio] + label::after {border-radius: 0;}
-    .qwertize .switch input[type=radio]:first-child + label::after {content: none;}
-    .qwertize .switch input[type=radio] + label + input[type=radio] + label::after {
+    .switch input[type=radio] + label:last-child::before {left: 50%;right: 0;}
+    .switch input[type=radio]:checked + label::before {color: #fff;}
+    .switch input[type=radio] + label::after {border-radius: 0;}
+    .switch input[type=radio]:first-child + label::after {content: none;}
+    .switch input[type=radio] + label + input[type=radio] + label::after {
         content: "";
         position: absolute;
         top: 0;
@@ -551,11 +545,11 @@ form {
         transition: all 200ms;
     }
 
-    .qwertize .switch input[type=radio]:checked + label + input[type=radio] + label::after {
+    .switch input[type=radio]:checked + label + input[type=radio] + label::after {
         left: 0;
         right: 50%;
     }
-    .qwertize .switch input[type=radio] + label + input[type=radio]:checked + label::after {
+    .switch input[type=radio] + label + input[type=radio]:checked + label::after {
         left: 50%;
         right: 0;
     }
@@ -992,3 +986,8 @@ div.spacer-1 { width: 100%; height: 1em;}
   color: rgba(0, 128, 81,1); }
 .tx-blue {
   color: rgba(0, 123, 195,1); }
+
+.border-top-0 { border-top: 0 !important; }
+.border-right-0 { border-right: 0 !important; }
+.border-bottom-0 { border-bottom: 0 !important; }
+.border-left-0 { border-left: 0 !important; }
