@@ -59,8 +59,6 @@
                 <div class="row sm-mg-bottom-4">
                   <div class="sm-12 md-12 lg-6 lg-push-3 cols">
                     <input class="full-x" type="text" name="name" value="https://cdn.rawgit.com/wktq/qwero/master/css/qwero.css">
-                    <input class="full-x sm-mg-top-1" type="text" name="name" value="https://cdn.rawgit.com/wktq/qwero/master/css/qwero-header.css">
-                    <input class="full-x sm-mg-top-1" type="text" name="name" value="https://cdn.rawgit.com/wktq/qwero/master/css/qwero-sliper.css">
                   </div>
                 </div>
               </div>
@@ -120,33 +118,6 @@
       </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    var ua = navigator.userAgent.toLowerCase();
-    var isiPhone = (ua.indexOf('iphone') > -1);
-    var isiPad = (ua.indexOf('ipad') > -1);
-    var isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
-    var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
-
-    if(isiPhone || isiPad || isAndroid || isAndroidTablet) {
-
-    } else {
-      toggleSliper();
-    }
-      $(".slip-btn").click(function() {
-        toggleSliper();
-      });
-
-    function toggleSliper() {
-      $(".sliper").toggleClass("sliper-open");
-      var slipIcon = $(".slip-btn").find(".icon");
-      if (slipIcon.hasClass("ion-navicon")) {
-        slipIcon.removeClass("ion-navicon");
-        slipIcon.addClass("ion-android-close");
-      } else {
-        slipIcon.removeClass("ion-android-close");
-        slipIcon.addClass("ion-navicon");
-      }
-    }
-    </script>
+    <script src="js/qwero-sliper.js" charset="utf-8"></script>
   </body>
 </html>
