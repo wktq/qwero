@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Qwero - Ultimate Clean & Advanced WEB front-end framework.</title>
+    <link rel="stylesheet" href="css/qwero.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/qwero-header.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/qwero-sliper.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="menu-header">
+        <div class="header-left">
+          <a class="slip-btn"><i class="icon ion-navicon"></i></a>
+        </div>
+        <div class="logo-wrap">
+          <a href="./"><h5 class="logo">Qwero</h5></a>
+        </div>
+        <div class="header-right">
+          <a href="https://github.com/wktq/qwero"><i class="icon ion-social-github"></i></a>
+        </div>
+      </div>
+    </header>
+    <nav class="sliper">
+      <ul>
+        <a href="./"><li><i class="icon ion-ios-home"></i>&nbsp;TOP</li></a>
+        <a href="./documentation.html"><li><i class="icon ion-ios-book"></i>&nbsp;Documentation</li></a>
+        <a href="./collection.html"><li><i class="icon ion-ios-albums"></i>&nbsp;Collection</li></a>
+        <a href="./themes.html"><li class="active"><i class="icon ion-ios-color-wand"></i>&nbsp;Theme</li></a>
+        <a href="https://github.com/wktq/qwero"><li><i class="icon ion-social-github"></i>&nbsp;Github</li></a>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="pack">
+        <div class="row">
+
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    var ua = navigator.userAgent.toLowerCase();
+    var isiPhone = (ua.indexOf('iphone') > -1);
+    var isiPad = (ua.indexOf('ipad') > -1);
+    var isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
+    var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
+
+    if(isiPhone || isiPad || isAndroid || isAndroidTablet) {
+
+    } else {
+      toggleSliper();
+    }
+      $(".slip-btn").click(function() {
+        toggleSliper();
+      });
+
+    function toggleSliper() {
+      $(".sliper").toggleClass("sliper-open");
+      var slipIcon = $(".slip-btn").find(".icon");
+      if (slipIcon.hasClass("ion-navicon")) {
+        slipIcon.removeClass("ion-navicon");
+        slipIcon.addClass("ion-android-close");
+      } else {
+        slipIcon.removeClass("ion-android-close");
+        slipIcon.addClass("ion-navicon");
+      }
+    }
+    </script>
+  </body>
+</html>
