@@ -924,19 +924,24 @@ div.spacer-1 { width: 100%; height: 1em;}
 
 /* Accennt */
 .accent-dark {
-  border-top: 2px #333333 solid;
+  color: rgba(51,51,51,1);
+  background-color: rgba(51,51,51,.2);
 }
 .accent-red {
-  border-top: 2px #ad1e25 solid;
-}
-.accent-blue {
-  border-top: 2px #007bc3 solid;
+  color: rgba(173,30,37,1);
+  background-color: rgba(173,30,37,.2);
 }
 .accent-orange {
-  border-top: 2px #eb7413 solid;
+  color: rgba(235,116,19,1);
+  background-color: rgba(235,116,19,.2);
+}
+.accent-blue {
+  color: rgba(0, 123, 195,1);
+  background-color: rgba(0, 123, 195,.2);
 }
 .accent-green {
-  border-top: 2px #008051 solid;
+  color: rgba(0, 128, 81,1);
+  background-color: rgba(0, 128, 81,.2);
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
