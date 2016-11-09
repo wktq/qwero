@@ -582,6 +582,9 @@ div.spacer-3 { width: 100%; height: 3em;}
 div.spacer-2 { width: 100%; height: 2em;}
 div.spacer-1 { width: 100%; height: 1em;}
 
+.mg-0 { margin: 0;}
+.pd-0 { padding: 0;}
+
 .sm-mg-0 { margin: 0;}
 .sm-mg-1 { margin: .5rem;}
 .sm-mg-2 { margin: 1.0rem;}

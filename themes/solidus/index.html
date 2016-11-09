@@ -4,35 +4,373 @@
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <title> Solidius | Qwero Themes </title>
   <meta name="description" content="">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="../../css/qwero.css" media="screen" title="no title">
   <link rel="stylesheet" href="style.css" media="screen" title="no title">
-  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="../../css/ionicons.css" media="screen" title="no title">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300|Muli:300,400" rel="stylesheet">
 </head>
 <body>
-  <div id="loading-screen" style="z-index: 10000;">
+  <div id="loading-screen" style="display:none; z-index: 10000;">
     <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
     </svg>
   </div>
   <header>
     <div class="menu-header">
-      <div class="header-left">
-        <a class="slip-btn"><i class="icon ion-navicon"></i></a>
-      </div>
-      <div class="logo-wrap">
-        <a href="./"><h5 class="logo">Qwero</h5></a>
-      </div>
-      <div class="header-right">
-        <a href="https://github.com/wktq/qwero"><i class="icon ion-social-github"></i></a>
+      <div class="pack pd-0">
+        <div class="lg-2 md-2 cols">
+          <span class="logo">Solidus</span>
+        </div>
+        <div class="lg-6 md-6 cols">
+          <ul class="slds-main-menu">
+            <li class="active">Home</li>
+            <li>Pages</li>
+              <ul class="child-menu">
+                <li>Business</li>
+                <li>Landing</li>
+                <li>Shop</li>
+              </ul>
+            <li>Blog</li>
+            <li>Elements</li>
+            <li>Download</li>
+          </ul>
+        </div>
+        <div class="lg-2 md-2 cols">
+          <ul class="">
+            <a class="login-btn">Login</a>
+            <a class="signup-btn">Sign up</a>
+          </ul>
+        </div>
+        <div class="lg-2 md-2 cols">
+          <ul class="slds-social-menu">
+            <li><i class="icon ion-logo-twitter"></i></li>
+            <li><i class="icon ion-logo-facebook"></i></li>
+            <li><i class="icon ion-logo-instagram"></i></li>
+            <li><i class="icon ion-logo-google"></i></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
-  <main>
-
+  <main style="margin-top: 60px">
+    <!-- Swiper slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="feature-section">
+      <div class="pack pd-0">
+        <div class="row tx-center">
+          <h2>Awesome Features</h2>
+        </div>
+        <div class="row">
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-phone-portrait"></i>
+            <h5>Responsive</h5>
+            <p>
+              The interfaces of this theme is completely optimized for pc, mobile, and tablet.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-options-outline"></i>
+            <h5>Customizable</h5>
+            <p>
+              You can cusitomize all of its styles as easy as pie.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-cog-outline"></i>
+            <h5>Maintainance</h5>
+            <p>
+              It's easy to maintain - thanks to Less CSS, Organized code, Well documentaion.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-brush-outline"></i>
+            <h5>Good Design</h5>
+            <p>
+              The Design is NOT selfish but for Good User Interface & User Experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fusion-section">
+      <div class="pack pd-0">
+        <div class="row tx-center">
+          <h2>You can Try this out. &nbsp;<i class="icon ion-ios-arrow-dropright-circle-outline"></i></h2>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-section">
+      <div class="pack pd-0">
+        <div class="row tx-center lg-mg-bottom-2">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+          <div class="portfolio-grid">
+            <div class="portfolio-grid-item" style="background-color: #4285F4;">
+              <div class="portfolio-grid-overlay"><i class="icon ion-ios-search"></i></div>
+              <i class="material-icons">web</i>
+              <p>
+                WEB Products
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-grid-item" style="background-color: #DE3E35;">
+              <div class="portfolio-grid-overlay"><i class="icon ion-ios-search"></i></div>
+              <i class="material-icons">smartphone</i>
+              <p>
+                Mobile Apps
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-grid-item" style="background-color: #F7C223;">
+              <div class="portfolio-grid-overlay"><i class="icon ion-ios-search"></i></div>
+              <i class="material-icons">brush</i>
+              <p>
+                UI / UX Projects
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-grid-item" style="background-color: #009688;">
+              <div class="portfolio-grid-overlay"><i class="icon ion-ios-search"></i></div>
+              <i class="material-icons">movie</i>
+              <p>
+                Videos
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#"><p class="tx-right sm-mg-2"><i class="icon ion-ios-arrow-dropright-circle-outline"></i>&nbsp;View All</p></a>
+        </div>
+      </div>
+      <div class="portfolio-modal">
+        <a class="portfolio-modal-close-btn"><i class="icon ion-md-close"></i></a>
+        <div class="portfolio-modal-image">
+          <img src="../../img/sample.jpg" alt="" />
+        </div>
+        <a class="portfolio-modal-close"><i class="icon ion-md-close"></i>&nbsp;Close modal</a>
+      </div>
+    </section>
+    <section class="pricetable-section">
+      <div class="pack pd-0">
+        <div class="row tx-center lg-mg-bottom-2">
+          <h2>Price Table</h2>
+        </div>
+        <div class="row">
+          <div class="lg-3 cols">
+            <div class="card" style="position: relative; overflow: visible">
+              <div class="ribbon"><span>Popular</span></div>
+              <div class="head">
+                Donald Trump
+              </div>
+              <div class="body">
+                <h2 class="pricetable-price">Free / Month</h2>
+                <h5 class="pricetable-feature"><i class="icon ion-md-star"></i>&nbsp;Features</h5>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Great America</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Mexico wall</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Gun control</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Political correctness</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Paris Agreement</li>
+              </div>
+              <div class="foot">
+                <a class="pricetable-btn fill-red" href="#"><i class="icon ion-ios-cart"></i>&nbsp;Purchase now</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg-3 cols">
+            <div class="card lg-mg-left-2">
+              <div class="head">
+                Hillary Clinton
+              </div>
+              <div class="body">
+                <h2 class="pricetable-price"><i class="icon ion-social-usd"></i>&nbsp;29.95 / Month</h2>
+                <h5 class="pricetable-feature"><i class="icon ion-md-star"></i>&nbsp;Features</h5>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Globalism</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Iran nuclear agreement</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;ObamaCare</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Gun control</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Parkinson's Disease</li>
+              </div>
+              <div class="foot">
+                <a class="pricetable-btn fill-red" href="#"><i class="icon ion-ios-cart"></i>&nbsp;Purchase now</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg-3 cols">
+            <div class="card lg-mg-left-2">
+              <div class="head">
+                Gary Johnson
+              </div>
+              <div class="body">
+                <h2 class="pricetable-price"><i class="icon ion-social-usd"></i>&nbsp;49.95 / Month</h2>
+                <h5 class="pricetable-feature"><i class="icon ion-md-star"></i>&nbsp;Features</h5>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Limited government</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Tax reduction</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Disarmament</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Ignorant</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Marijuana</li>
+              </div>
+              <div class="foot">
+                <a class="pricetable-btn fill-red" href="#"><i class="icon ion-ios-cart"></i>&nbsp;Purchase now</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg-3 cols">
+            <div class="card lg-mg-left-2">
+              <div class="head">
+                Jill Stein
+              </div>
+              <div class="body">
+                <h2 class="pricetable-price">Contact Us</h2>
+                <h5 class="pricetable-feature"><i class="icon ion-md-star"></i>&nbsp;Features</h5>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Decentralization</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Jewish origin</li>
+                <li class="pricetable-feature"><i class="icon ion-ios-checkmark-circle"></i>&nbsp;Populism</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Name recognition</li>
+                <li class="pricetable-feature feature-false"><i class="icon ion-ios-close-circle"></i>&nbsp;Paris Agreement</li>
+              </div>
+              <div class="foot">
+                <a class="pricetable-btn fill-red" href="#"><i class="icon ion-ios-cart"></i>&nbsp;Purchase now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature-section">
+      <div class="pack pd-0">
+        <div class="row tx-center">
+          <h2>Awesome Features</h2>
+        </div>
+        <div class="row">
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-phone-portrait"></i>
+            <h5>Responsive</h5>
+            <p>
+              The interfaces of this theme is completely optimized for pc, mobile, and tablet.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-options-outline"></i>
+            <h5>Customizable</h5>
+            <p>
+              You can cusitomize all of its styles as easy as pie.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-cog-outline"></i>
+            <h5>Maintainance</h5>
+            <p>
+              It's easy to maintain - thanks to Less CSS, Organized code, Well documentaion.
+            </p>
+          </div>
+          <div class="lg-3 cols feature-box">
+            <i class="icon ion-ios-brush-outline"></i>
+            <h5>Good Design</h5>
+            <p>
+              The Design is NOT selfish but for Good User Interface & User Experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-
+    <div class="pack">
+      <div class="row">
+        <div class="lg-2 cols">
+          <h5>Menu heading</h5>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+          </ul>
+        </div>
+        <div class="lg-2 cols">
+          <h5>Menu heading</h5>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+          </ul>
+        </div>
+        <div class="lg-2 cols">
+          <h5>Menu heading</h5>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+          </ul>
+        </div>
+        <div class="lg-2 cols">
+          <h5>Menu heading</h5>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+          </ul>
+        </div>
+        <div class="lg-4 cols">
+          <div class="row">
+            <h5>News letter Form</h5>
+            <input class="subscribe-text" type="text" name="name" value="" placeholder="Enter your mail address">
+            <input class="subscribe-btn" type="submit" name="name" value="Subscribe">
+          </div>
+          <div class="row">
+            <hr style="margin-bottom: 12px;">
+          </div>
+          <div class="row">
+            <ul class="footer-social-icons">
+              <li><i class="icon ion-logo-twitter"></i></li>
+              <li><i class="icon ion-logo-facebook"></i></li>
+              <li><i class="icon ion-logo-instagram"></i></li>
+              <li><i class="icon ion-logo-google"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js" charset="utf-8"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+
+    $('.portfolio-grid-overlay').click(function() {
+      $('.portfolio-modal').fadeIn();
+    });
+
+    $('.portfolio-modal-close').click(function() {
+      $('.portfolio-modal').fadeOut();
+    });
+
+    $('.portfolio-modal-close-btn').click(function() {
+      $('.portfolio-modal').fadeOut();
+    });
+  </script>
 </body>
 </html>
