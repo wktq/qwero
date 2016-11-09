@@ -119,7 +119,7 @@ a {
 
 .swiper-container {
     width: 100%;
-    height: calc(85vh - 60px);
+    height: calc(85vh);
 }
 .swiper-slide {
     text-align: center;
@@ -284,6 +284,23 @@ a {
   right: 0;
   padding: 12px 32px;
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-grid .portfolio-grid-item {
+    width: 100%;
+    height: 320px;
+    position: relative;
+  }
+  .portfolio-modal-image img {
+    width: 90vw;
+    object-fit: scale-down;
+  }
+  .swiper-container {
+      width: 100%;
+      height: 240px;
+  }
 }
 
 /* Fusion section */
