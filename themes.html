@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="screen" title="no title">
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" media="screen" title="no title">
   </head>
   <body>
     <header>
@@ -30,17 +31,35 @@
         <a href="./"><li><i class="icon ion-ios-home"></i>&nbsp;TOP</li></a>
         <a href="./documentation.html"><li><i class="icon ion-ios-book"></i>&nbsp;Documentation</li></a>
         <a href="./collection.html"><li><i class="icon ion-ios-albums"></i>&nbsp;Collection</li></a>
-        <a href="./themes.html"><li class="active"><i class="icon ion-ios-color-wand"></i>&nbsp;Theme</li></a>
+        <a href="./themes.html"><li class="active"><i class="icon ion-ios-color-wand"></i>&nbsp;Themes</li></a>
         <a href="https://github.com/wktq/qwero"><li><i class="icon ion-social-github"></i>&nbsp;Github</li></a>
       </ul>
     </nav>
     <main class="container">
       <div class="pack">
         <div class="row">
-
+          <a target="_blank" style="float: right; line-height: 40px;" href="./themes/solidus">Open Demo <i class="icon ion-android-open"></i></a>
+          <h3>Solidus</h3>
+          <!-- Swiper slider -->
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/solidus-preview-image.png" alt="" /></div>
+                <div class="swiper-slide"><img src="img/solidus-preview-image2.png" alt="" /></div>
+                <div class="swiper-slide"><img src="img/solidus-preview-image3.png" alt="" /></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js" charset="utf-8"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script type="text/javascript">
     var ua = navigator.userAgent.toLowerCase();

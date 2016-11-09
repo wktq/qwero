@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .menu-header .logo-wrap .logo {
   font-family: "Quicksand";
   font-size: 24px;
@@ -28,4 +31,8 @@
 
 .pack a:hover{
   color: #F89D46;
+}
+
+.swiper-wrapper img {
+  width: 100%;
 }
