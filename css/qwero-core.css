@@ -358,7 +358,7 @@ select {
   height: 40px;
   padding-left: 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
   box-sizing: border-box;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -390,7 +390,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 2px solid #666;
+  border: 1px solid #666;
   outline: 0; }
 label,
 legend {
@@ -452,11 +452,11 @@ input[type=checkbox] + label {
         background: #FFF;
     }
     input[type=radio] + label::before {
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         border-radius: 30px;
     }
     input[type=checkbox] + label::before {
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
     }
     input[type=radio]:checked + label::after,
     input[type=checkbox]:checked + label::after {
@@ -495,7 +495,7 @@ input[type=checkbox] + label {
         margin-bottom: .5em;
         height: 26px;
         overflow: hidden;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
     }
     .switch input[type=radio] + label {
         position: static;
@@ -538,7 +538,7 @@ input[type=checkbox] + label {
         height: auto;
         margin: auto;
         background: #EB7413;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         -webkit-transition: all 200ms;
         transition: all 200ms;
     }
